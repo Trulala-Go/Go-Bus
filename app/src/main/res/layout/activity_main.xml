@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="#000000"
+     android:orientation="vertical">
+
+    <LinearLayout
+         android:layout_height="70dp"
+         android:layout_width="match_parent"
+         android:background="#777777"
+         android:gravity="center_vertical"
+         android:orientation="horizontal">
+
+        <ImageView
+             android:layout_height="50dp"
+             android:layout_width="50dp"
+             android:src="@drawable/nav"
+             android:layout_marginEnd="50dp"
+             android:id="@+id/nav" />
+
+        <ImageView
+             android:layout_height="35dp"
+             android:layout_width="35dp"
+             android:layout_marginEnd="20dp"
+             android:src="@drawable/file_baru"
+             android:id="@+id/fileBaru" />
+
+        <ImageView
+             android:layout_height="35dp"
+             android:layout_width="35dp"
+             android:layout_marginEnd="20dp"
+             android:src="@drawable/folder_baru"
+             android:id="@+id/folderBaru" />
+
+        <ImageView
+             android:layout_height="35dp"
+             android:layout_width="35dp"
+             android:layout_marginEnd="20dp"
+             android:src="@drawable/tf_file"
+             android:id="@+id/tfFile" />
+
+        <ImageView
+             android:layout_height="35dp"
+             android:layout_width="35dp"
+             android:layout_marginEnd="20dp"
+             android:src="@drawable/tf_folder"
+             android:id="@+id/tfFolder" />
+
+        <ImageView
+             android:layout_height="35dp"
+             android:layout_width="35dp"
+             android:visibility="gone"
+             android:layout_marginEnd="20dp"
+             android:src="@drawable/kembali"
+             android:id="@+id/kembali" />
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:orientation="horizontal">
+
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="300dp"
+             android:visibility="gone"
+             android:background="#555555"
+             android:id="@+id/liner">
+
+            <FrameLayout
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent">
+
+                <LinearLayout
+                     android:layout_height="500dp"
+                     android:layout_width="match_parent"
+                     android:background="#000000"
+                     android:padding="5dp"
+                     android:layout_margin="10dp">
+
+                    <ScrollView
+                         android:layout_height="match_parent"
+                         android:layout_width="match_parent">
+
+                        <TextView
+                             android:layout_height="match_parent"
+                             android:layout_width="match_parent"
+                             android:clickable="true"
+                             android:contextClickable="true"
+                             android:textColor="#afffff"
+                             android:text="$"
+                             android:id="@+id/hasil" />
+
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                     android:layout_height="70dp"
+                     android:layout_width="match_parent"
+                     android:layout_marginBottom="20dp"
+                     android:gravity="center"
+                     android:background="#000000"
+                     android:orientation="horizontal"
+                     android:layout_gravity="bottom">
+
+                    <EditText
+                         android:layout_height="wrap_content"
+                         android:layout_width="230dp"
+                         android:layout_marginEnd="10dp"
+                         android:textColor="#afffff"
+                         android:id="@+id/perintah" />
+
+                    <TextView
+                         android:layout_height="40dp"
+                         android:layout_width="40dp"
+                         android:gravity="center"
+                         android:background="#afffff"
+                         android:textColor="#000000"
+                         android:text="Run"
+                         android:id="@+id/run" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:orientation="vertical">
+
+            <LinearLayout
+                 android:layout_height="60dp"
+                 android:layout_width="match_parent"
+                 android:visibility="gone"
+                 android:gravity="center"
+                 android:background="#666666"
+                 android:id="@+id/lama">
+
+                <ImageView
+                     android:layout_height="40dp"
+                     android:layout_width="40dp"
+                     android:src="@drawable/potong"
+                     android:layout_marginEnd="20dp"
+                     android:id="@+id/potong" />
+
+                <ImageView
+                     android:layout_height="40dp"
+                     android:layout_width="40dp"
+                     android:src="@drawable/salin"
+                     android:layout_marginEnd="20dp"
+                     android:id="@+id/salin" />
+
+                <ImageView
+                     android:layout_height="40dp"
+                     android:layout_width="40dp"
+                     android:src="@drawable/hapus"
+                     android:layout_marginEnd="20dp"
+                     android:id="@+id/hapus" />
+
+                <ImageView
+                     android:layout_height="40dp"
+                     android:layout_width="40dp"
+                     android:src="@drawable/rename"
+                     android:layout_marginEnd="20dp"
+                     android:id="@+id/rename" />
+
+                <ImageView
+                     android:layout_height="40dp"
+                     android:layout_width="40dp"
+                     android:visibility="gone"
+                     android:src="@drawable/tempel"
+                     android:layout_marginEnd="20dp"
+                     android:id="@+id/tempel" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent"
+                 android:layout_margin="5dp"
+                 android:padding="5dp"
+                 android:orientation="vertical">
+
+                <ScrollView
+                     android:layout_height="match_parent"
+                     android:layout_width="match_parent">
+
+                    <GridLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:orientation="horizontal"
+                         android:id="@+id/grid"
+                         android:columnCount="3"
+                         android:layout_gravity="center_horizontal">
+
+                    </GridLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
