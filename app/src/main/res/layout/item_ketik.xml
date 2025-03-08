@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="wrap_content"
+     android:layout_width="300dp"
+     android:background="#afffff"
+     android:padding="5dp"
+     android:orientation="vertical">
+
+    <EditText
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_marginBottom="30dp"
+         android:background="#000000"
+         android:hint="Tulis"
+         android:padding="3dp"
+         android:textColor="#afffff"
+         android:layout_marginTop="10dp"
+         android:id="@+id/tulis" />
+
+    <Button
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_margin="20dp"
+         android:id="@+id/batal"
+         android:text="Batal" />
+
+    <Button
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_margin="20dp"
+         android:id="@+id/mulai"
+         android:text="Mulai" />
+
+</LinearLayout>
